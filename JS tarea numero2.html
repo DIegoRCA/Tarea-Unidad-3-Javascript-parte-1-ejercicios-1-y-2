@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS tarea numero 2</title>
+</head>
+
+<body>
+	<script>
+		var num1;
+		var num2;
+		var num3;
+
+		var num1=prompt('decime el primer numero: ','');
+		var num2=prompt('decime el segundo numero: ','');
+		var num3=prompt('decime el tercer numero: ','');
+
+		var numeros = [num1, num2,num3];
+		var mayor = 0;
+
+		for(i=0;i<numeros.length; i++){
+			if (numeros[i]>mayor){
+				mayor = numeros[i]
+			}
+		} 
+
+document.write('los numeros a evaluar son: ' + numeros +
+'<br>');
+
+document.write('el numero mayor es: ' + mayor);
+		console.log(numeros);
+		console.log(mayor);
+	</script>
+</body>
+</html>
+
